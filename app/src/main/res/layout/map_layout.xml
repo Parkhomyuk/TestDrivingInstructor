@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:background="@color/colorPrimary"
+       >
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@mipmap/ic_location_city_white_24dp"
+
+        android:foregroundGravity="center_vertical|center_horizontal" />
+
+
+
+       <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/city"
+        android:textColorHint="@color/colorHint"
+        android:textSize="24sp"
+        android:background="@drawable/feld"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="32dp"
+        >
+
+       </EditText>
+   </LinearLayout>
+    <fragment xmlns:map="http://schemas.android.com/apk/res-autos"
+        android:id="@+id/mapView"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textMap"
+        map:cameraTargetLat="40.7484"
+        map:cameraTargetLng="-73.9857"
+        map:cameraBearing="112.5"
+        map:cameraTilt="65"
+        map:cameraZoom="17"
+        />
+</LinearLayout>
