@@ -56,8 +56,8 @@ public class BoxAdapter extends BaseAdapter  {
 
         Instructors instructors = getInstructor(position);
 
-        // заполняем View в пункте списка данными из товаров: наименование, цена
-        // и картинка
+        // заполняем View в пункте списка данными
+
         ((TextView) view.findViewById(R.id.tvName)).setText(instructors.name);
         ((TextView) view.findViewById(R.id.tvCity)).setText(instructors.city);
         ((TextView) view.findViewById(R.id.tvExperience)).setText(instructors.experience);

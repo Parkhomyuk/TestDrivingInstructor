@@ -29,6 +29,7 @@ public class TabInstructorActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private String textActivityVich;
     private String textActivityMe;
+    private String textActivityRev;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,8 +55,9 @@ public class TabInstructorActivity extends AppCompatActivity {
         ImageView av=(ImageView) findViewById(R.id.im);
         av.setImageResource(image);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        textActivityVich="I did not understand now "+txtName;
-        textActivityMe="I did not understand now "+txtCity;
+        textActivityVich=txtName;
+        textActivityMe="I think that the best thing to do is go to a rally school. You can waste a lot of time and money by driving cars around not knowing what you’re doing. The best way to start is to let someone who has the experience teach you how to do it. I’ve been to several rally schools, the main one being Team O’Neil in the States. That was the first place I ever went and I got a lot of knowledge out of them. Travis Pastrana had gone there and I thought it looked fun, so I wanted to try and drive a rally car. I absolutely loved it but also found that I had a pretty decent amount of talent inside the car and since then I’ve just been pushing to learn more and more. Well the main thing is that I absolutely doing all this stuff. So the idea of me being able to get in a car and be able to drive all these courses at a demo is just for fun. But at a competition, like X Games or WRC, the competitive side takes over and I just want to win.";
+        textActivityRev="No comments yet";
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
 
@@ -87,7 +89,7 @@ public class TabInstructorActivity extends AppCompatActivity {
         fragmentTwo.setArguments(bundle2);
         //Fragment THREE of TableInstructor
         Bundle bundle3 = new Bundle();
-        bundle3.putString("text3", textActivityMe);
+        bundle3.putString("text3", textActivityRev);
         ThreeFragment fragmentThree = new ThreeFragment();
         fragmentThree.setArguments(bundle3);
 
