@@ -31,9 +31,9 @@ public class MapActivity extends Activity implements OnMapReadyCallback {
     public void onMapReady(GoogleMap map) {
         mapReady=true;
         googleMap=map;
-        LatLng ny= new LatLng(40.7484,-73.9857);
+        LatLng ny= new LatLng(32.08088,34.78057);
 
-        CameraPosition target= CameraPosition.builder().target(ny).zoom(7).build();
+        CameraPosition target= CameraPosition.builder().target(ny).zoom(8).build();
 
 
 

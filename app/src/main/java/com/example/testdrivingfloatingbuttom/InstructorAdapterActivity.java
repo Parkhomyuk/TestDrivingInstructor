@@ -1,9 +1,13 @@
 package com.example.testdrivingfloatingbuttom;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v4.widget.SlidingPaneLayout;
+
 import android.view.View;
 import android.widget.Adapter;
 import android.widget.AdapterView;
@@ -25,6 +29,12 @@ public class InstructorAdapterActivity extends Activity  implements AdapterView.
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_instructor);
+        //  To avoiding a matter  we change the fade color to transperant
+        SlidingPaneLayout slidingPaneLayout = (SlidingPaneLayout) findViewById(R.id.sliding_pane_layout);
+        assert slidingPaneLayout != null;
+        slidingPaneLayout.setSliderFadeColor(Color.TRANSPARENT);
+
+
 
         // создаем адаптер
         fillData();

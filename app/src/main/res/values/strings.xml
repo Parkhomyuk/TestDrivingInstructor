@@ -7,4 +7,12 @@
     <string name="box">box</string>
     <string name="AdapterInstructor">adaptInstructor</string>
     <string name="TabInstructorActivity">TabInstructorActivity</string>
+    <string-array name="city">
+        <item>Tel Aviv</item>
+        <item>Irusalim</item>
+        <item>Haifa</item>
+        <item>Rehovot</item>
+        <item>Netania</item>
+        <item>Naaria</item>
+    </string-array>
 </resources>
