@@ -24,4 +24,45 @@ public class Instructors {
 
     public Instructors() {
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public int getAvatar() {
+        return avatar;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public String getExperience() {
+        return experience;
+    }
+
+    public String getRating() {
+        return rating;
+    }
+
+    public String getTypeVehicle() {
+        return typeVehicle;
+    }
+
+    @Override
+    public String toString() {
+        return "Instructors{" +
+                "name='" + name + '\'' +
+                ", city='" + city + '\'' +
+                ", avatar=" + avatar +
+                ", age='" + age + '\'' +
+                ", experience='" + experience + '\'' +
+                ", rating='" + rating + '\'' +
+                ", typeVehicle='" + typeVehicle + '\'' +
+                '}';
+    }
 }
