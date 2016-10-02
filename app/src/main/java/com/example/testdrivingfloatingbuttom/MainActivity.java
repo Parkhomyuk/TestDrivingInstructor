@@ -13,12 +13,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapFragment;
-
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapFragment;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, OnMapReadyCallback {
     private Boolean isFabOpen = false;
@@ -64,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 animateFAB();
                 break;
             case R.id.fab1:
-                Intent intentSign= new Intent(MainActivity.this,MaterialDesignSignUpRegistrationFormXMLUI.class);
+                Intent intentSign= new Intent(MainActivity.this,SignUpRegistration.class);
                 startActivity(intentSign);
                 Log.d("Fab", "Sign in");
                 break;

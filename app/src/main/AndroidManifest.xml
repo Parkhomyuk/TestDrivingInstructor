@@ -32,7 +32,7 @@
         <activity android:name=".MapActivity"
             android:label="@string/Map">
         </activity>
-        <activity android:name=".MaterialDesignSignUpRegistrationFormXMLUI"
+        <activity android:name=".SignUpRegistration"
             android:label="@string/Sign">
         </activity>
         <activity android:name=".InstructorAdapterActivity"

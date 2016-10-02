@@ -101,7 +101,7 @@ public class BoxAdapter extends BaseAdapter  {
     CompoundButton.OnCheckedChangeListener myCheckChangeList = new CompoundButton.OnCheckedChangeListener() {
         public void onCheckedChanged(CompoundButton buttonView,
                                      boolean isChecked) {
-            // меняем данные товара (в корзине или нет)
+
             getInstructor((Integer) buttonView.getTag()).box = isChecked;
         }
     };*/

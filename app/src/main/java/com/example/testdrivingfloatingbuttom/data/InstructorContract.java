@@ -31,8 +31,18 @@ public final class InstructorContract {
         * */
         public final static String COLUMN_INSTRUCTOR_NAME="name";
         public final static String COLUMN_INSTRUCTOR_EMAIL="email";
+        public final static String COLUMN_INSTRUCTOR_CITY="city";
+        public final static String COLUMN_INSTRUCTOR_SCHOOL="school";
+        public final static String COLUMN_INSTRUCTOR_VEHICLE="vehicle";
         public final static String COLUMN_INSTRUCTOR_PASSWORD="password";
         public final static String COLUMN_INSTRUCTOR_PHON="phon";
+        public final static String COLUMN_INSTRUCTOR_AVATAR="avatar";
+
+        /**
+         * Possible values for the gender of the Instructor.
+         */
+
+
 
     }
 
